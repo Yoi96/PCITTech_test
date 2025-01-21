@@ -1,0 +1,805 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  #cables
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+  
+  #computer_systems
+  {
+     padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+    
+  }
+  
+   .cable_section
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 1em;
+   
+  }
+  
+  .cable_title
+  {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-top:3em;
+    margin-bottom:1em;
+    text-transform: uppercase;
+  }
+  
+    #cable_picture
+  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height:10em;
+    background-position: center;
+  }
+  
+  .cable_picture1
+  {
+    background:url("https://c1.neweggimages.com/productimage/nb640/A7U1D2107314QGXE.jpg");
+  }
+  
+ .cable_picture2
+{   
+  background: url("https://www.metz-connect.com/file/8a8a80ea6c38a9e8016db9716df518b9.en.0/03_kupfer_rj45_consolidation_point_direct_attached_link.jpg?derivate=usage%3Dposter%2Cwidth~900");
+}
+
+ .cable_picture3
+{   
+  background: url("https://m.media-amazon.com/images/I/71G1TnRSYyL.jpg");
+}
+
+ .cable_picture4
+{   
+  background: url("https://img1.wsimg.com/isteam/ip/92a037ad-35c8-4e17-835a-056a5189229e/blob-0206.png/:/cr=t:29.76%25,l:0%25,w:100%25,h:50%25/rs=w:388,h:194,cg:true");
+}
+
+
+ .cable_picture5
+{   
+  background: url("https://img1.wsimg.com/isteam/ip/92a037ad-35c8-4e17-835a-056a5189229e/blob-0208.png/:/cr=t:20.97%25,l:0%25,w:100%25,h:61.26%25/rs=w:388,h:194,cg:true");
+}
+
+ .cable_picture6
+{   
+  background: url("https://img1.wsimg.com/isteam/ip/92a037ad-35c8-4e17-835a-056a5189229e/blob-0209.png/:/cr=t:19.47%25,l:0%25,w:100%25,h:61.07%25/rs=w:388,h:194,cg:true");
+}
+
+ .cable_picture7
+{   
+  background: url("https://img1.wsimg.com/isteam/ip/92a037ad-35c8-4e17-835a-056a5189229e/blob-0210.png/:/cr=t:25%25,l:0%25,w:100%25,h:50%25/rs=w:388,h:194,cg:true/qt=q:94");
+}
+
+  .cable_picture10
+  {
+    background:url("https://cdn.thewirecutter.com/wp-content/media/2024/11/aiocomputers-2048px-6261.jpg?auto=webp&quality=75&width=1024");
+  }
+
+
+  .cable_text
+{
+
+  font-family: "Roboto", serif;
+}
+
+.contact_buttons
+{
+  text-align: center;
+  width: 100%;
+  margin: 1em;
+}
+
+.phone_call, .email{
+  border: none;
+  background: black;
+  color: white;
+  margin-top: 1em;
+  border-radius: 3px;
+  line-height:2em;
+  width:100%;
+  
+}
+
+.phone_call:hover, .email:hover
+{
+  background: #305CDE;
+}
+
+.phone_call a, .email a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+li{
+  padding: 0px; 
+  margin: 0px;
+  margin-top:0.5em;
+}
+
+@media only screen and (max-width: 600px) 
+  {
+    #cables
+    {
+      overflow: hidden;
+      overflow-y: hidden;
+    }
+    
+    .cable_section
+    {
+      grid-template-columns: 1fr;
+      gap: 1em;
+ 
+    }
+      
+    .cable_title
+    {
+      text-align: center;
+    }
+    
+
+       
+  }
+  
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+.learn_more button
+{
+  border: none;
+  background: none;
+  font-size: 0.7em;
+  margin-top: 0.5em;
+}
+
+.learn_more a{
+  color: black;
+  text-transform: uppercase;
+}
+
+.learn_more button:hover
+{
+  font-weight: bolder;
+  color: #305CDE;
+  border-bottom: 3px #305CDE solid;
+  text-decoration: none;
+}
+  #items
+  {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 1em;
+   overflow: hidden;
+  }
+  
+
+  
+#item
+{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 1em;
+  font-family: Roboto;
+}
+  
+  #item_picture
+  {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding:0px;
+    background-size: contain;
+    background-position: center;
+    line-height: 10em;
+    margin-bottom: 1em;
+  }
+  
+  .item_picture1
+  {
+    background-image: url('https://media.fs.com/images/community/erp/F5RFX_A8EHNSmAYy554ZjW6Nm8.jpg');
+  }
+  
+    .item_picture2
+  {
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*GWSSIrJ_EauYcXugvbUqHA.jpeg');
+  }
+  
+     .item_picture3
+  {
+    background-image: url('https://cdn.thewirecutter.com/wp-content/media/2023/07/4kmonitors-2048px-9794.jpg');
+  }
+  
+     .item_picture4
+  {
+    background-image: url('https://www.csite.com.sa/used-laptops-and-desktop-500x500.png');
+  }
+  
+       .item_picture5
+  {
+    background-image: url('https://arc.losrios.edu/arc/main/img/ARC03-Academics/instruction/ARC-Technical-Education-Division/ARC-Electronics-Technology/ARC-electronics-technology-940x529.jpg');
+  }
+  
+         .item_picture6
+  {
+    background-image: url('https://tribenetworksltd.com/wp-content/uploads/2018/05/hardware.jpg');
+  }
+  
+    
+         .item_picture7
+  {
+    background-image: url('https://www.modernbeacon.com/wp-content/uploads/2023/05/Office-Equipment-Supplies-1-1024x660.jpg');
+  }
+  
+  
+    
+         .item_picture8
+  {
+    background-image: url('https://www.acctelecom.com/wp-content/smush-webp/2018/02/BUSINESS-PHONE-SYSTEM-cropped-1.jpg.webp');
+  }
+  
+  
+    
+         .item_picture9
+  {
+    background-image: url('https://static.grainger.com/rp/s/is/image/Grainger/426P08_AS01?$adapimg$&hei=536&wid=536');
+  }
+  
+  
+    
+         .item_picture10
+  {
+    background-image: url('https://distributionmgmt.com/wp-content/uploads/2022/12/products-1024x387.png');
+  }
+  
+          .item_picture12
+  {
+    background-image: url('https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_137264179/fee_786_587_png');
+  }
+  
+            .item_picture11
+  {
+    background-image: url('https://www.trifectanetworks.com/wp-content/uploads/2024/06/Dell-family-HR.png');
+  }
+
+@media only screen and (max-width: 600px) 
+  {
+     #items
+      {
+       display: grid;
+       grid-template-columns: auto;
+       gap: 0.5em;
+       overflow: hidden;
+      }
+  
+  }
+  
+</style>
+
+ 
+
+<div id="items">
+<div id="item" class="item1">
+  <div id="item_picture" class="item_picture1">&nbsp;</div>
+   <div >Cables</div>
+    <div id="learn_more1" class="learn_more">
+      <button type="button">FIND OUT MORE</button>
+      </div>
+</div>
+
+<div id="item" class="item2">
+  <div id="item_picture" class="item_picture2">&nbsp;</div>
+  <div>Computer Accessories</div>
+  <div id="learn_more2" class="learn_more">
+    <button type="button">FIND OUT MORE</button>
+  </div>
+</div>
+
+<div id="item" class="item3">
+  <div id="item_picture" class="item_picture3">&nbsp;</div>
+  <div>Computer Monitors & Displays</div>
+  <div id="learn_more3" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+  </div>
+  
+<div id="item" class="item4">
+  <div id="item_picture" class="item_picture4">&nbsp;</div>
+  <div>Computers</div>
+  <div id="learn_more4" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+
+<div id="item" class="item5">
+  <div id="item_picture" class="item_picture5">&nbsp;</div>
+  <div>Electronics</div>
+  <div id="learn_more5" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+  
+  
+<div id="item" class="item6">
+  <div id="item_picture" class="item_picture6">&nbsp;</div>
+  <div>Networking</div>
+  <div id="learn_more6" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item7">
+  <div id="item_picture" class="item_picture7">&nbsp;</div>
+  <div>Office Equipment & Supplies</div>
+  <div id="learn_more7" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item8">
+  <div id="item_picture" class="item_picture8">&nbsp;</div>
+  <div>Phones & Video Conferencing</div>
+  <div id="learn_more8" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item9">
+  <div id="item_picture" class="item_picture9">&nbsp;</div>
+  <div>Power</div>
+  <div id="learn_more9" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item10">
+  <div id="item_picture" class="item_picture10">&nbsp;</div>
+  <div>Printers & Supplies</div>
+  <div id="learn_more10" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item11">
+  <div id="item_picture" class="item_picture11">&nbsp;</div>
+  <div>Servers & Server Management</div>
+  <div id="learn_more11" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+
+<div id="item" class="item12">
+  <div id="item_picture" class="item_picture12">&nbsp;</div>
+  <div>Storage & Hard Drives</div>
+  <div id="learn_more12" class="learn_more"><button type="button">FIND OUT MORE</button></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="cables">
+  
+  <div class="cable_title">A/V Device Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture1" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+      <ul>
+        <li>A/V Cable</li>
+        <li>Video Cable</li>
+        <li>Audio Cable</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br><button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Cabling Components</div>
+  <div class="cable_section">
+    <div class="cable_picture2" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Network Connector</li>
+        <li>Faceplate</li>
+        <li>Cable Guide</li>
+        <li>Cable Binder</li>
+        <li>Cable Raceway</li>
+        <li>Mounting Box</li>
+        <li>Computer Cables</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br><button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Computer Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture3" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Data Transfer Cable</li>
+        <li>Data Transfer Adapter</li>
+        <li>Data Transfer/Power Cable</li>
+        <li>Graphic Adapter</li>
+        <li>Media Converter</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br><button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">I/O Device Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture4" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>KVM Cable</li>
+        <li>KVM Switch-box</li>
+        <li>KVM Console</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br><button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Network Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture5" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Network Cable</li>
+        <li>Network Adapter</li>
+        <li>SFP+</li>
+        <li>QSEP+</li>
+        <li>Network Patch Panel</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br><button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Power Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture6" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Standard Power Cord</li>
+        <li>Power Extension Cord</li>
+        <li>Splitter Cord</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Storage Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture7" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Drive Cables</li>
+        <li>Transfer Cables</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br>
+      <button type="button" id="return1" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="computer_systems">
+  
+  <div class="cable_title">Desktop Computers</div>
+  <div class="cable_section">
+    <div class="cable_picture10" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+      <ul>
+        <li>All-in-One Computers</li>
+        <li>Mini PCs</li>
+        <li>Workstations</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Portable Computers</div>
+  <div class="cable_section">
+    <div class="cable_picture2" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>2-in-1 Laptops</li>
+        <li>Laptops</li>
+        <li>Tablets</li>
+        <li>Notebook</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Server Computers</div>
+  <div class="cable_section">
+    <div class="cable_picture3" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Server Components
+             <ul>
+               <li>Server Accessories</li>
+               <li>Server Memories</li>
+             </ul>
+        </li>
+        <li>Servers
+             <ul>
+               <li>Blade Servers</li>
+               <li>Rack Servers</li>
+             </ul>
+        </li>
+         <li>Server Management
+             <ul>
+               <li>KVM Consoles</li>
+               <li>KVM Modules</li>
+               <li>KVM Switches</li>
+             </ul>
+        </li>
+        
+         <li>Thin/Client Terminal
+             <ul>
+               <li>Thin and Zero Clients</li>
+               <li>All-in-one Thin Clients</li>
+               <li>Mobile Thin Clients</li>
+             </ul>
+        </li>
+        
+        <li>Workstations
+             <ul>
+               <li>All-in one Work Station</li>
+             </ul>
+         
+        </li>
+        
+          <li>Monitor and TV
+             <ul>
+               <li>Monitor </li>
+                <li>Screens </li>
+                <li>TV</li>
+             </ul>
+         
+        </li>
+        
+        
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">I/O Device Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture4" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>KVM Cable</li>
+        <li>KVM Switch-box</li>
+        <li>KVM Console</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Network Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture5" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Network Cable</li>
+        <li>Network Adapter</li>
+        <li>SFP+</li>
+        <li>QSEP+</li>
+        <li>Network Patch Panel</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call">
+          <a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Power Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture6" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Standard Power Cord</li>
+        <li>Power Extension Cord</li>
+        <li>Splitter Cord</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email">
+        <a href="mailto:info@pcittech.com">Email Us</a></button><br>
+        <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+
+    <div class="cable_title">Storage Cables</div>
+  <div class="cable_section">
+    <div class="cable_picture7" id="cable_picture">&nbsp;</div>
+    <div class="cable_text">
+       <ul>
+        <li>Drive Cables</li>
+        <li>Transfer Cables</li>
+      </ul>
+    </div>
+    <div class="cable_button">
+      <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+      <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button><br>
+      <button type="button" id="return2" class="phone_call"><a href="#">More Hardwares</a></button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+
+const buttons = document.querySelectorAll('#learn_more1');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+
+    const cablesDiv = document.getElementById('cables');
+    const itemsDiv = document.getElementById('items');
+    
+
+    if (cablesDiv.style.display === 'none' || cablesDiv.style.display === '') {
+      cablesDiv.style.display = 'block'; 
+       itemsDiv.style.display = 'none'; 
+      
+    } else {
+      cablesDiv.style.display = 'none';  
+      itemsDiv.style.display = 'grid'; 
+    }
+  });
+});
+</script>
+
+<script>
+
+const learn_more2 = document.querySelectorAll('#learn_more2');
+
+learn_more2.forEach(button => {
+  button.addEventListener('click', function() {
+
+    const computer_systems = document.getElementById('computer_systems');
+    const itemsDiv = document.getElementById('items');
+    const cablesDiv = document.getElementById('cables');
+    
+
+    if (computer_systems.style.display === 'none' || computer_systems.style.display === '') {
+      computer_systems.style.display = 'block'; 
+       itemsDiv.style.display = 'none'; 
+       cablesDiv.style.display = 'none'; 
+       
+      
+    } else {
+      computer_systems.style.display = 'none';  
+      itemsDiv.style.display = 'grid'; 
+      cablesDiv.style.display = 'none'; 
+    }
+  });
+});
+</script>
+
+<script>
+
+const return_buttons = document.querySelectorAll('#return1');
+
+
+return_buttons.forEach(button => {
+  button.addEventListener('click', function() {
+
+    const cablesDiv = document.getElementById('cables');
+    const itemsDiv = document.getElementById('items');
+    
+
+    if (itemsDiv.style.display === 'none' || itemsDiv .style.display === '') {
+       itemsDiv.style.display = 'grid'; 
+       cablesDiv.style.display = 'none'; 
+         
+      
+    } else {
+      itemsDiv.style.display = 'none';  
+      cablesDiv.style.display = 'block'; 
+    }
+  });
+});
+
+</script>
+
+<script>
+
+const return_buttons2 = document.querySelectorAll('#return2');
+
+
+return_buttons2.forEach(button => {
+  button.addEventListener('click', function() {
+
+    const computer_systems = document.getElementById('computer_systems');
+    const itemsDiv = document.getElementById('items');
+    
+
+    if (computer_systems.style.display === 'none' || itemsDiv .style.display === '') {
+       itemsDiv.style.display = 'none'; 
+       computer_systems.style.display = 'block'; 
+         
+      
+    } else {
+      itemsDiv.style.display = 'grid';  
+      computer_systems.style.display = 'none'; 
+    }
+  });
+});
+
+</script>
+ 
+
