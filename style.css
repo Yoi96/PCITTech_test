@@ -10,8 +10,89 @@
     overflow: hidden;
     overflow-y: hidden;
     display:none;
+    
+  }
+
+
+  #ssm
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+
+
+  #shd
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+
+
+
+
+   #printers
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
   }
   
+ #office
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+  
+
+ #pvc
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+  
+ #power
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+  
+
+
   #computer_systems
   {
     padding: 0px;
@@ -38,7 +119,32 @@
 
   }
 
+    #networking
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+  }
+
     #computer
+  {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto
+    font-family: "League Spartan", serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    display:none;
+
+  }
+
+    #electronics
   {
     padding: 0px;
     margin: 0px;
@@ -211,11 +317,352 @@
 
 /**Computer**/
 
+/**electronics**/
+
+
+.cable_picture40
+{
+  background:url("https://i.redd.it/wxtxq02rdg6b1.jpg");
+}
+
+
+.cable_picture41
+{
+  background:url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQTR3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1687660671097");
+}
+
+.cable_picture42
+{
+  background:url("https://www.fullcompass.com/wp-content/uploads/2022/04/All_About_Mics-AdobeStock_76367953-gc-opt.jpg");
+}
+
+.cable_picture43
+{
+  background:url("https://wired.me/wp-content/uploads/2023/07/Apple-Watch-Series-8-Group-Colors-Gear.jpeg");
+}
+
+
+
+.cable_picture44
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7991947?$product_search_result$");
+}
+
+
+.cable_picture45
+{
+  background:url("https://www.highspeedinternet.com/app/uploads/2018/02/best-streaming-devices-header.png");
+}
+
+
+.cable_picture46
+{
+  background:url("https://m.media-amazon.com/images/I/71Rco8KVU3L.jpg");
+}
+
+
+/**electronics**/
+
+
+/**Networking**/
+
+.cable_picture50
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6477405?$product_search_result$");
+}
+
+
+.cable_picture51
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/2831337?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture52
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/3605173?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture53
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/4752735?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture54
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6575095?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture55
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/2608478?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture56
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6493702?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture57
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/4401578?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture58
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5974838?$product_search_result$&h=200&w=200");
+}
+
+
+ 
+/**Networking**/
+
+
+/**Office Equipment & Supplies**/
+
+
+.cable_picture60
+{
+  background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjejyUuA9rrv0BVTmd34qNJjpwlhv549Th0A2X6pVOd83OQ5G5YOHjXVpIc93XINuEnA8&usqp=CAU");
+}
+
+
+ 
+/**Office Equipment & Supplies**/
+
+
+
+
+/**Phones & Video Conferencing**/
+
+
+.cable_picture70
+{
+  background:url("https://i.shgcdn.com/3d3246e1-cb5a-48d6-8cb5-ac2e6439de4f/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+}
+
+
+
+.cable_picture71
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/1304366a?$product-detail$&h=200&w=200");
+}
+
+
+
+
+.cable_picture72
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/3371366?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+.cable_picture73
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7340816?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture74
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/4607629?$product_search_result$&h=200&w=200");
+}
+
+
+
+ 
+ 
+/**Phones & Video Conferencing**/
+
+
+
+/**Power**/
+
+.cable_picture80
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5907784?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+.cable_picture81
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/3787654?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture82
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/3787654?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture83
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/2562953?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture84
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6772813?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+/**Power**/
+/**Printers**/
+.cable_picture90
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5968539?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+.cable_picture91
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7404897?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+.cable_picture92
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5188194?$product_search_result$&h=200&w=200");
+}
+
+
+
+
+.cable_picture93
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5590289?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture94
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/4219166?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture95
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7423688?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture96
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6333710?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture97
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7395559?$product_search_result$&h=200&w=200");
+}
+
+
+
+.cable_picture98
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6910509?$product_search_result$&h=200&w=200");
+}
+
+
+/**Printers**/
 
 
 
 
 
+/**ssm**/
+
+.cable_picture100
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7391217?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture101
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/7074635?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture102
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/2742750?$product_search_result$&h=200&w=200");
+}
+
+
+
+/**ssm**/
+
+
+
+/**shd**/
+
+.cable_picture200
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6328218?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture201
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5842455?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture202
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/4351172?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture203
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6414019?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture204
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6430420?$product_search_result$&h=200&w=200");
+}
+
+
+.cable_picture205
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/5474849?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture206
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6424391?$product_search_result$&h=200&w=200");
+}
+
+.cable_picture207
+{
+  background:url("https://webobjects2.cdw.com/is/image/CDW/6248854?$product_search_result$&h=200&w=200");
+}
+
+/**shd**/
 
 
 
@@ -232,6 +679,14 @@
 
   font-family: "Roboto", serif;
 }
+
+.cable_text p
+{
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+
 
 .contact_buttons
 {
