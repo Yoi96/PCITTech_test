@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Nav Example</title>
+    <style>
+        .content-div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown navigation -->
+    <select id="dropdown" onchange="showContent()">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+
+    <!-- Content Divs -->
+    <div id="option1" class="content-div">
+        <h2>Content for Option 1</h2>
+        <p>This is the content related to Option 1.</p>
+    </div>
+
+    <div id="option2" class="content-div">
+        <h2>Content for Option 2</h2>
+        <p>This is the content related to Option 2.</p>
+    </div>
+
+    <div id="option3" class="content-div">
+        <h2>Content for Option 3</h2>
+        <p>This is the content related to Option 3.</p>
+    </div>
+
+    <script>
+        function showContent() {
+            // Hide all divs first
+            const divs = document.querySelectorAll('.content-div');
+            divs.forEach(div => div.style.display = 'none');
+            
+            // Get the selected option
+            const selectedValue = document.getElementById('dropdown').value;
+
+            // Show the corresponding div based on the selected option
+            const selectedDiv = document.getElementById(selectedValue);
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block';
+            }
+        }
+    </script>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigation Example</title>
+    <style>
+        .content-div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown navigation -->
+    <select id="product_list_navs" onchange="showContent()">
+        <option value="business_applications">Business Applications</option>
+        <option value="communication">Communication</option>
+        <option value="education">Education</option>
+        <option value="graphics_design">Graphics & Design</option>
+        <option value="networking">Networking & Servers</option>
+        <option value="operating_systems">Operating Systems</option>
+        <option value="programming_web_development">Programming & Web Development</option>
+        <option value="security">Security</option>
+        <option value="virtualization">Virtualization</option>
+    </select>
+
+    <!-- Content Divs -->
+    <div id="business_applications" class="content-div">
+        <h2>Business Applications</h2>
+        <p>This is the content related to Business Applications.</p>
+    </div>
+
+    <div id="communication" class="content-div">
+        <h2>Communication</h2>
+        <p>This is the content related to Communication.</p>
+    </div>
+
+    <div id="education" class="content-div">
+        <h2>Education</h2>
+        <p>This is the content related to Education.</p>
+    </div>
+
+    <div id="graphics_design" class="content-div">
+        <h2>Graphics & Design</h2>
+        <p>This is the content related to Graphics & Design.</p>
+    </div>
+
+    <div id="networking" class="content-div">
+        <h2>Networking & Servers</h2>
+        <p>This is the content related to Networking & Servers.</p>
+    </div>
+
+    <div id="operating_systems" class="content-div">
+        <h2>Operating Systems</h2>
+        <p>This is the content related to Operating Systems.</p>
+    </div>
+
+    <div id="programming_web_development" class="content-div">
+        <h2>Programming & Web Development</h2>
+        <p>This is the content related to Programming & Web Development.</p>
+    </div>
+
+    <div id="security" class="content-div">
+        <h2>Security</h2>
+        <p>This is the content related to Security.</p>
+    </div>
+
+    <div id="virtualization" class="content-div">
+        <h2>Virtualization</h2>
+        <p>This is the content related to Virtualization.</p>
+    </div>
+
+    <script>
+        function showContent() {
+            // Hide all divs first
+            const divs = document.querySelectorAll('.content-div');
+            divs.forEach(div => div.style.display = 'none');
+            
+            // Get the selected value from the dropdown
+            const selectedValue = document.getElementById('product_list_navs').value;
+
+            // Show the corresponding div based on the selected option
+            const selectedDiv = document.getElementById(selectedValue);
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

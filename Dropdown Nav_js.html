@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product List</title>
+    <style>
+        .content-div {
+            display: none; /* Hide all content sections initially */
+        }
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .sofeware_item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown Navigation -->
+    <select id="product_list_navs">
+        <!-- Dropdown options will be added by JavaScript -->
+    </select>
+
+    <!-- Content Sections will be added by JavaScript -->
+
+    <script>
+        // Data for the dropdown options and content
+        const sections = [
+            { id: 'business_applications', title: 'Business Applications', description: 'Streamline financial management with accounting and finance software solutions.' },
+            { id: 'communication', title: 'Communication', description: 'Explore communication tools for improved team collaboration.' },
+            { id: 'education', title: 'Education', description: 'Find educational software to enhance learning and teaching experiences.' },
+            { id: 'graphics_design', title: 'Graphics & Design', description: 'Tools for creative professionals to create stunning designs.' },
+            { id: 'networking', title: 'Networking & Servers', description: 'Solutions for networking infrastructure and server management.' },
+            { id: 'operating_systems', title: 'Operating Systems', description: 'Explore operating systems for various computing needs.' },
+            { id: 'programming_web_development', title: 'Programming & Web Development', description: 'Tools and software for programming, coding, and web development.' },
+            { id: 'security', title: 'Security', description: 'Security software solutions for protecting data and privacy.' },
+            { id: 'virtualization', title: 'Virtualization', description: 'Explore solutions for creating virtual environments and infrastructures.' }
+        ];
+
+        // Get the dropdown element
+        const selectElement = document.getElementById('product_list_navs');
+
+        // Create the dropdown options dynamically
+        sections.forEach(section => {
+            const option = document.createElement('option');
+            option.value = section.id;
+            option.textContent = section.title;
+            selectElement.appendChild(option);
+        });
+
+        // Function to create the content section dynamically
+        function createContentSection(section) {
+            const div = document.createElement('div');
+            div.id = section.id;
+            div.classList.add('sofeware_item', 'content-div');
+
+            const title = document.createElement('div');
+            title.classList.add('sofeware_item_title');
+            title.textContent = section.title;
+
+            const description = document.createElement('div');
+            description.classList.add('sofeware_item_description');
+            description.textContent = section.description;
+
+            div.appendChild(title);
+            div.appendChild(description);
+            document.body.appendChild(div);
+        }
+
+        // Create all content sections dynamically
+        sections.forEach(section => {
+            createContentSection(section);
+        });
+
+        // Function to show content based on selected option
+        function showContent() {
+            const selectedValue = selectElement.value;
+
+            // Hide all sections first
+            const divs = document.querySelectorAll('.content-div');
+            divs.forEach(div => div.style.display = 'none');
+
+            // Show the selected section
+            const selectedDiv = document.getElementById(selectedValue);
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block';
+            }
+        }
+
+        // Set the default selected option to 'business_applications' and show its content
+        window.addEventListener('DOMContentLoaded', function() {
+            selectElement.value = 'business_applications';
+            showContent();  // Show the default content
+        });
+
+        // Add event listener to dropdown to show the corresponding content when changed
+        selectElement.addEventListener('change', showContent);
+    </script>
+
+</body>
+</html>

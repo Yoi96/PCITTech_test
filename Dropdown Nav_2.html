@@ -1,0 +1,82 @@
+<div id="product_list"> <!--product_list-->
+
+    <!-- Dropdown navigation -->
+    <select id="product_list_navs" onchange="showContent()">
+        <option value="business_applications">Business Applications</option>
+        <option value="communication">Communication</option>
+        <option value="education">Education</option>
+        <option value="graphics_design">Graphics & Design</option>
+        <option value="networking">Networking & Servers</option>
+        <option value="operating_systems">Operating Systems</option>
+        <option value="programming_web_development">Programming & Web Development</option>
+        <option value="security">Security</option>
+        <option value="virtualization">Virtualization</option>
+    </select>
+
+    <!-- Software Items (content sections) -->
+    <div id="sofeware_items"> <!--sofeware_items-->
+
+        <div id="business_applications" class="sofeware_item content-div">
+            <div id="sofeware_item_picture" class="sofeware_item_picture1">&nbsp;</div>
+            <div class="sofeware_item_title">Accounting & Finance</div>
+            <div class="sofeware_item_description">Streamline financial management with accounting and finance software solutions. Explore a range of options designed to optimize your financial processes, from bookkeeping to reporting.</div>
+            <div class="sofeware_button">
+                <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+                <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button>
+            </div>
+        </div>
+
+        <div id="communication" class="sofeware_item content-div">
+            <div id="sofeware_item_picture" class="sofeware_item_picture2">&nbsp;</div>
+            <div class="sofeware_item_title">Communication</div>
+            <div class="sofeware_item_description">Boost productivity with communication software solutions. Explore a comprehensive range of integrated applications designed to streamline business communications.</div>
+            <div class="sofeware_button">
+                <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+                <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button>
+            </div>
+        </div>
+
+        <div id="education" class="sofeware_item content-div">
+            <div id="sofeware_item_picture" class="sofeware_item_picture2">&nbsp;</div>
+            <div class="sofeware_item_title">Education</div>
+            <div class="sofeware_item_description">Enhance your educational tools with the latest software designed for teaching and learning. Explore options that cater to both students and educators.</div>
+            <div class="sofeware_button">
+                <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+                <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button>
+            </div>
+        </div>
+
+        <div id="graphics_design" class="sofeware_item content-div">
+            <div id="sofeware_item_picture" class="sofeware_item_picture2">&nbsp;</div>
+            <div class="sofeware_item_title">Graphics & Design</div>
+            <div class="sofeware_item_description">Create stunning designs with top-tier graphics design software solutions. From photo editing to 3D modeling, find the perfect tools for your creative projects.</div>
+            <div class="sofeware_button">
+                <button type="button" class="phone_call"><a href="tel:+16464778314">Phone Call</a></button><br>
+                <button type="button" class="email"><a href="mailto:info@pcittech.com">Email Us</a></button>
+            </div>
+        </div>
+
+        <!-- Other sections can follow the same pattern -->
+
+    </div> <!--sofeware_items-->
+
+</div> <!--product_list-->
+
+<script src="product_list_script.js"></script>
+
+<script>
+    function showContent() {
+        // Hide all divs first
+        const divs = document.querySelectorAll('.content-div');
+        divs.forEach(div => div.style.display = 'none');
+        
+        // Get the selected value from the dropdown
+        const selectedValue = document.getElementById('product_list_navs').value;
+
+        // Show the corresponding div based on the selected option
+        const selectedDiv = document.getElementById(selectedValue);
+        if (selectedDiv) {
+            selectedDiv.style.display = 'block';
+        }
+    }
+</script>

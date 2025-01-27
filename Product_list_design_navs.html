@@ -1,0 +1,55 @@
+<div id="product_list_navs"><!----product_list_navs---->
+	<div id="product_list_title" class="title_bluecolor"><a href="#business_applications">Business Applications</a></div>
+	<div id="product_list_title"><a href="#communication">Communication</a></div>
+	<div id="product_list_title"><a href="#education">Education</a></div>
+	<div id="product_list_title"><a href="#graphics_design">Graphics & Design</a></div>
+	<div id="product_list_title"><a href="#networking">Networking & Servers</a></div>
+	<div id="product_list_title"><a href="#operating_systems">Operating Systems</a></div>
+	<div id="product_list_title"><a href="#programming_web_development">Programming & Web Development</a></div>
+	<div id="product_list_title"><a href="#security">Security </a></div>
+	<div id="product_list_title"><a href="#virtualization">Virtualization</a></div>
+
+	<script type="text/javascript" src="product_list_script"></script>
+
+</div><!----product_list_navs---->
+
+
+#product_list_navs
+{
+
+ 	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #111;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+}
+
+#product_list_navs a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#product_list_navs a:hover {
+  color: #f1f1f1;
+}
+
+#product_list_navs .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  #product_list_navs {padding-top: 15px;}
+  #product_list_navs a {font-size: 18px;}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Show Content Example</title>
+    <style>
+        /* Style for the content divs */
+        .content-div {
+            display: none;  /* Hide all divs by default */
+            max-height: 400px; /* Set max height */
+            overflow: auto;  /* Allow scrolling if content overflows */
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+
+        /* Add a little styling for the dropdown */
+        select {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown to select different content -->
+    <select id="product_list_navs" onchange="showContent()">
+        <option value="business_applications">Business Applications</option>
+        <option value="personal_apps">Personal Applications</option>
+        <option value="tools">Tools</option>
+    </select>
+
+    <!-- Divs for each type of content -->
+    <div id="business_applications" class="content-div">
+        <p>Content for Business Applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor est quis ex suscipit, nec volutpat nunc pharetra.</p>
+    </div>
+
+    <div id="personal_apps" class="content-div">
+        <p>Content for Personal Applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut libero sit amet justo vulputate tincidunt vel ut sapien. Vivamus tincidunt quam ut nulla tempus, ac cursus ex luctus.</p>
+    </div>
+
+    <div id="tools" class="content-div">
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+        <p>Content for Tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien eu nisi euismod volutpat. Curabitur ac ante sed lectus dictum hendrerit.</p>
+    </div>
+
+    <script>
+        // JavaScript function to show the selected content based on dropdown
+        function showContent() {
+            const divs = document.querySelectorAll('.content-div');
+            divs.forEach(div => div.style.display = 'none');  // Hide all divs
+
+            const selectedValue = document.getElementById('product_list_navs').value; // Get selected value from dropdown
+            const selectedDiv = document.getElementById(selectedValue); // Find the corresponding div
+
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block'; // Show the selected div
+            }
+        }
+
+        // Initialize page to show content on page load based on the selected dropdown value
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('product_list_navs').value = 'business_applications'; // Set default dropdown value
+            showContent();  // Show the corresponding content for default selection
+        });
+    </script>
+</body>
+</html>
